@@ -1,0 +1,15 @@
+{
+  "name": "safeno/clube-full-stack_ajax-com-php",
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Lucas Safeno",
+      "email": "lugnorio@gmail.com"
+    }
+  ],
+  "require": {}
+}
