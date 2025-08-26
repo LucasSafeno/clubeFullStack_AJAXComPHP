@@ -5,9 +5,7 @@ window.onload = function () {
   var div_users = document.querySelector('#div-users');
 
   btn_users.onclick = function () {
-    if (xhttp.readyState < 4) {
-      div_users.innerHTML = `<i class='fa fa-refresh fa-spin fa-3x fa-fw'></i><span class='sr-only'>Loading..</span>`;
-    }
+
 
     xhttp.onreadystatechange = function () {
       if (xhttp.readyState == 4 && xhttp.status == 200) {

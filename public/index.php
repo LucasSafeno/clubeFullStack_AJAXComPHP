@@ -20,6 +20,7 @@
     </div>
   </div>
 
+  <script src="assets/js/xhttp.js"></script>
   <script src="assets/js/user.js"></script>
 </body>
 
