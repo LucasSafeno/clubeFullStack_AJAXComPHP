@@ -6,13 +6,21 @@ var div_create = document.querySelector('#div-create');
 form_cadastrar.onsubmit = function (event) {
   event.preventDefault();
 
-  xmlHttpPost('ajax/create', function () {
-    beforeSend(function () {
-      div_create.innerHTML = `<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i><span class="sr-only"> Loading</span>`;
-    });
+  var form = new FormData(form_cadastrar);
 
-    success(function () {});
-  });
+  xmlHttpPost(
+    'ajax/create',
+    function () {
+      beforeSend(function () {
+        div_create.innerHTML = `<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i><span class="sr-only"> Loading</span>`;
+      });
+
+      success(function () {
+        console.log(xhttp.responseText);
+      });
+    },
+    form
+  );
 };
 
 window.onload = function () {
